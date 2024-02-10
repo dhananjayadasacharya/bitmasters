@@ -18,9 +18,24 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     const password = document.getElementById('password').value;
     const type = document.getElementById('type').value;
 
-    // Here you would perform actual authentication (e.g., making an API call to a backend)
-    // For demonstration, we will simply alert the entered values
-    alert(`Logging in as: ${type}\nUsername: ${username}\nPassword: ${password}`);
+    // Redirect to the appropriate HTML page based on user type
+    let redirectPage;
+    switch (type) {
+        case 'student':
+            redirectPage = 'student.html';
+            break;
+        case 'club-admin':
+            redirectPage = 'club-admin.html';
+            break;
+        case 'college-admin':
+            redirectPage = 'college-admin.html';
+            break;
+        default:
+            // Handle invalid user type
+            alert('Invalid user type');
+            return;
+    }
+    window.location.href = redirectPage;
 });
 
 document.getElementById('signup-form').addEventListener('submit', function(event) {
@@ -30,13 +45,22 @@ document.getElementById('signup-form').addEventListener('submit', function(event
     const confirmPassword = document.getElementById('confirm-password').value;
     const signupType = document.getElementById('signup-type').value;
 
-    // Check if passwords match
-    if (newPassword !== confirmPassword) {
-        alert('Passwords do not match. Please try again.');
-        return;
+    // Redirect to the appropriate HTML page based on user type
+    let redirectPage;
+    switch (signupType) {
+        case 'student':
+            redirectPage = 'student.html';
+            break;
+        case 'club-admin':
+            redirectPage = 'club-admin.html';
+            break;
+        case 'college-admin':
+            redirectPage = 'college-admin.html';
+            break;
+        default:
+            // Handle invalid user type
+            alert('Invalid user type');
+            return;
     }
-
-    // Here you would perform actual signup process (e.g., making an API call to a backend)
-    // For demonstration, we will simply alert the entered values
-    alert(`Creating account as: ${signupType}\nUsername: ${newUsername}\nPassword: ${newPassword}`);
+    window.location.href = redirectPage;
 });

@@ -2,11 +2,29 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-image:url('UVCE_Home.jpg');
+    background-size: cover;
 }
-h2{
+h1{
     text-align: center;
     color: rebeccapurple;
     font-family: gabriola;
+    font-size: 50px;
+}
+p{
+    text-align: center;
+    color: rgb(208, 34, 11);
+    font-family: gabriola;
+    font-size: 25px;
+}
+#login-options{
+    align-self: center;
+}
+#login-btn{
+    align-items: center;
+}
+#signup-btn{
+    align-items: center;
 }
 #login-options{
    text-align: center;
