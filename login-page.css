@@ -6,7 +6,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(to right, #bdc3c7 0%, #2c3e50 100%);
+  background-color: var(--dl-color-gray-500);
 }
 .login-page-form {
   width: 454px;
@@ -28,6 +28,7 @@
   animation-timing-function: ease;
 }
 .login-page-text {
+  color: var(--dl-color-custom-primary1);
   height: var(--dl-size-size-large);
   align-self: stretch;
   text-align: center;
@@ -83,12 +84,15 @@
   padding-bottom: var(--dl-space-space-halfunit);
 }
 .login-page-login {
+  color: var(--dl-color-gray-white);
   width: var(--dl-size-size-large);
   height: var(--dl-size-size-small);
   margin-top: var(--dl-space-space-oneandhalfunits);
   padding-top: var(--dl-space-space-halfunit);
+  border-width: 0px;
   padding-left: var(--dl-space-space-halfunit);
   padding-right: var(--dl-space-space-halfunit);
   padding-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
   background-color: var(--dl-color-custom-primary1);
 }

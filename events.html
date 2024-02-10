@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Register - Glorious Euphoric Guanaco</title>
-    <meta property="og:title" content="Register - Glorious Euphoric Guanaco" />
+    <title>events - Glorious Euphoric Guanaco</title>
+    <meta property="og:title" content="events - Glorious Euphoric Guanaco" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -142,59 +142,55 @@
   <body>
     <link rel="stylesheet" href="./style.css" />
     <div>
-      <link href="./register.css" rel="stylesheet" />
+      <link href="./events.css" rel="stylesheet" />
 
-      <div class="register-container">
-        <form
-          id="login credentials"
-          enctype="application/x-www-form-urlencoded"
-          class="register-form"
-        >
-          <h1 class="register-text">Register Now</h1>
-          <input
-            type="email"
-            id="emailid"
-            name="Email ID:"
-            placeholder="bitmasters@gmail.com"
-            autocomplete="email"
-            class="register-textinput input"
-          />
-          <input
-            type="password"
-            id="password"
-            name="password"
-            maxlength="8"
-            minlength="6"
-            placeholder="password"
-            autocomplete="current-password"
-            class="register-textinput1 input"
-          />
-          <div class="register-container1">
-            <select id="usertype" class="register-select">
-              <option value="Option 1">Student</option>
-              <option value="Option 2">College Admin</option>
-              <option value="Option 3">Club Admin</option>
-            </select>
-            <animate-on-reveal
-              animation="tada"
-              duration="300ms"
-              delay="0s"
-              direction="normal"
-              easing="ease"
-              iteration="1"
+      <div class="events-container">
+        <input type="checkbox" checked="true" class="events-checkbox" />
+        <input type="checkbox" checked="true" class="events-checkbox1" />
+        <input type="checkbox" checked="true" class="events-checkbox2" />
+        <div class="events-container1">
+          <h1>Select the events you want to add in the calendar:</h1>
+          <ul class="events-ul list">
+            <li class="events-li list-item">
+              <span class="events-text01">
+                <span>Event A</span>
+                <br />
+                <br />
+              </span>
+            </li>
+            <li class="list-item">
+              <span class="events-text05">
+                <span>Event B</span>
+                <br />
+                <br />
+              </span>
+              <input type="checkbox" checked="true" class="events-checkbox3" />
+            </li>
+            <li class="list-item">
+              <span class="events-text09">
+                <span>Event C</span>
+                <br />
+                <br />
+              </span>
+            </li>
+          </ul>
+          <animate-on-reveal
+            animation="tada"
+            duration="500ms"
+            delay="0s"
+            direction="normal"
+            easing="ease"
+            iteration="1"
+          >
+            <button
+              type="button"
+              data-thq-animate-on-reveal="true"
+              class="events-button button"
             >
-              <button
-                id="login"
-                name="Login"
-                type="submit"
-                data-thq-animate-on-reveal="true"
-                class="register-login button"
-              >
-                Register
-              </button>
-            </animate-on-reveal>
-          </div>
-        </form>
+              Done
+            </button>
+          </animate-on-reveal>
+        </div>
       </div>
     </div>
     <script

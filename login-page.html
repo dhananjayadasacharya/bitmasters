@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>login-page</title>
+    <title>login-page - Glorious Euphoric Guanaco</title>
     <meta
       property="og:title"
       content="login-page - Glorious Euphoric Guanaco"
@@ -112,6 +112,21 @@
     />
     <link
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
       href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
     />
     <style>
@@ -161,9 +176,9 @@
           />
           <div class="login-page-container1">
             <select id="usertype" class="login-page-select">
-              <option value="Option 1">Option 1</option>
-              <option value="Option 2">Option 2</option>
-              <option value="Option 3">Option 3</option>
+              <option value="Student">Student</option>
+              <option value="College Admin">College Admin</option>
+              <option value="Club Admin">Club Admin</option>
             </select>
             <animate-on-reveal
               animation="tada"
@@ -173,15 +188,15 @@
               easing="ease"
               iteration="1"
             >
-              <button
+              <a
+                href="events.html"
                 id="login"
                 name="Login"
-                type="submit"
                 data-thq-animate-on-reveal="true"
                 class="login-page-login button"
               >
                 Login
-              </button>
+              </a>
             </animate-on-reveal>
           </div>
         </form>
