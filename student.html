@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
     <title>Document</title>
 </head>
 <body>
     <div id="student">
+        
+        <nav>
+            <div class="main-nav">
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="nav_item" id="calendar"><button onclick="myFunction()">Click me</button>Calendar</li>
+                    <li class="nav_item" id="events">Events</li>
+                    <li class="nav_item" id="exams">Exams</li>
+                    <li class="nav_item" id="about">About</li>
+                </ul>
+              </div>
+            </div>
+        </nav>
         <h2>Welcome, Student!</h2>
         <h3>Upcoming Events:</h3>
         <ul>
@@ -19,6 +34,6 @@
         </marquee>
       </div>
       <div id="calendar"></div>
-<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+<script src="scripts.js"></script>
 </body>
 </html>

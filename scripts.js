@@ -64,3 +64,35 @@ document.getElementById('signup-form').addEventListener('submit', function(event
     }
     window.location.href = redirectPage;
 });
+
+
+  
+    var calendar = new Calendar('#calendar', data);
+  
+  // scripts.js
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Add event listener for "Calendar" item
+    document.getElementById('calendar').addEventListener('click', function() {
+        // Redirect to Google Calendar
+        window.location.href = 'https://calendar.google.com';
+    });
+
+    // Add event listener for "Events" item
+    document.getElementById('events').addEventListener('click', function() {
+        // Redirect to the events HTML page
+        window.location.href = 'events.html'; // Replace with the path to your events HTML page
+    });
+
+    // Add event listener for "Exams" item
+    document.getElementById('exams').addEventListener('click', function() {
+        // Redirect to the exams HTML page
+        window.location.href = 'exams.html'; // Replace with the path to your exams HTML page
+    });
+
+    // Add event listener for "About" item
+    document.getElementById('about').addEventListener('click', function() {
+        // Redirect to the about HTML page
+        window.location.href = 'about.html'; // Replace with the path to your about HTML page
+    });
+});

@@ -2,36 +2,91 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image:url('UVCE_Home.jpg');
+    background-image:url('assets/UVCE.jpg');
     background-size: cover;
+    background-color: beige;
 }
-h1{
+.heading{
+   padding-bottom: 5px;
+   background-color: #0c4566;;
+}
+.diary{
+    margin-top: auto;
     text-align: center;
-    color: rebeccapurple;
+    color: white;
     font-family: gabriola;
     font-size: 50px;
+    
+  
 }
-p{
+.tagline{
     text-align: center;
-    color: rgb(208, 34, 11);
+    margin-top: auto;
+    color: rgb(226, 222, 231);
     font-family: gabriola;
     font-size: 25px;
+    position: relative;
+    animation: moveTagline 15s infinite alternate;
+  
+   
+}
+@keyframes moveTagline {
+    0% {
+        left: -450px;
+    }
+    100% {
+        left: 450px; 
+    }
 }
 #login-options{
     align-self: center;
+    align-content: last baseline;
+    font-family: Franklin Gothic Medium;
+    opacity: 95%;
 }
+
 #login-btn{
     align-items: center;
+    padding: 10px;
+    margin-right: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    background-color: rgb(255, 0, 108);
+    border-color: rgb(255, 0, 108);
+    color: white;
+    display: inline-block;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.4s;
+}
+.button:hover {
+  background-color:rgb(255, 0, 108); 
+  color: white;
 }
 #signup-btn{
     align-items: center;
+    padding-block: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(255, 0, 108);
+    border-color: rgb(255, 0, 108);
+    color: white;
+    display: inline-block;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.4s;
 }
+.button:hover {
+    background-color:rgb(255, 0, 108); 
+    color: white;
+  }
 #login-options{
    text-align: center;
 }
 #login-container {
+    align-items: center;
     margin: 100px auto;
     width: 300px;
+}
+#login-form{
+    background-color: darkslategrey;
+    opacity: 0.6;
 }
 
 #login-form label {
@@ -68,3 +123,24 @@ p{
     background-color: #f4f4f4;
     padding: 10px;
 }
+.main-nav{
+    background-color: aqua;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: right;
+    box-shadow: 0 0 4px #bbd0e2;
+ }
+ nav{
+    position: fixed;
+    cursor: pointer;
+    top: 0;
+    z-index: 100;
+    right: 0%;
+    left: 0%;}
+    .flex{
+        display: flex;
+        gap: 20px;   
+         }
+         .flex li{
+            list-style: none;}
