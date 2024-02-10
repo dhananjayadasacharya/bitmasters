@@ -1,0 +1,52 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+h2{
+    text-align: center;
+    color: rebeccapurple;
+    font-family: gabriola;
+}
+#login-options{
+   text-align: center;
+}
+#login-container {
+    margin: 100px auto;
+    width: 300px;
+}
+
+#login-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#login-form input,
+#login-form select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#calendar-container {
+    margin: 50px auto;
+    width: 600px;
+}
+
+#events {
+    margin-bottom: 20px;
+}
+
+#upcoming-events {
+    background-color: #f4f4f4;
+    padding: 10px;
+}
